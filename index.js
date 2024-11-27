@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 mongoose
-  .connect(process.env.MONGODB_URI, {
+  .connect("mongodb+srv://nileshp:Okk12345@cluster0.cwmozw9.mongodb.net", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
