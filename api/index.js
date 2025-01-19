@@ -12,6 +12,7 @@ const app = express();
 app.use(cors());
 const PORT = process.env.PORT || 5000;
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
